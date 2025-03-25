@@ -101,11 +101,14 @@ lives=3
 font=pygame.font.Font(None,36)
 
 def reset():
-    global game_state,score,lives
+    global game_state,score,lives,last_spawn_time,objects
 
     game_state='play'
     score=0
     lives=3
+    last_spawn_time=0
+    objects=[]
+
 
 while running:
     
